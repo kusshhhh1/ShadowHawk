@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+/* Custom utility classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.1),
+    transparent
+  );
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Threat severity colors */
+.text-threat-critical {
+  color: #dc2626;
+}
+
+.text-threat-high {
+  color: #ef4444;
+}
+
+.text-threat-medium {
+  color: #f59e0b;
+}
+
+.text-threat-low {
+  color: #10b981;
+}
+
+.bg-threat-critical\/20 {
+  background-color: rgba(220, 38, 38, 0.2);
+}
+
+.bg-threat-high\/20 {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.bg-threat-medium\/20 {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+
+.bg-threat-low\/20 {
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.border-threat-critical\/30 {
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.border-threat-high\/30 {
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.border-threat-medium\/30 {
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.border-threat-low\/30 {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Dark theme colors */
+.bg-dark-gradient {
+  background: linear-gradient(135deg, #0e1126 0%, #0a0f1d 50%, #060b23 100%);
+}
+
+.bg-dark-800 {
+  background-color: rgba(31, 41, 55, 0.95);
+}
+
+.bg-dark-700 {
+  background-color: rgba(55, 65, 81, 0.95);
+}
+
+.bg-dark-600 {
+  background-color: rgba(75, 85, 99, 0.95);
+}
+
+.border-dark-600 {
+  border-color: rgba(75, 85, 99, 0.95);
+}
+
+.border-dark-700 {
+  border-color: rgba(55, 65, 81, 0.95);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+/* Toast container custom styling */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 12px !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Chart.js custom styling */
+.chartjs-tooltip {
+  background: rgba(17, 24, 39, 0.95) !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Loading skeleton custom colors */
+.react-loading-skeleton {
+  background-color: #374151 !important;
+}
+
+.react-loading-skeleton::after {
+  background: linear-gradient(
+    90deg,
+    #374151 25%,
+    #4b5563 50%,
+    #374151 75%
+  ) !important;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
