@@ -280,7 +280,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by:**
 - **Kushagra** - Lead Developer
-- **Dev** - Co-Developer
 
 ## 🙏 Acknowledgments
 
