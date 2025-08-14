@@ -463,7 +463,7 @@ function LandingPage() {
           
           <div className="border-t border-dark-600 pt-8 text-center">
             <p className="text-gray-400">
-              🔐 Built with ❤️ by <span className="text-primary-500">Kushagra & Dev</span>
+              🔐 Built with ❤️ by <span className="text-primary-500">Kushagra</span>
             </p>
             <div className="flex justify-center space-x-6 mt-4">
               <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">GitHub</a>
