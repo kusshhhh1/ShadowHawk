@@ -278,8 +278,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Contributors
 
-**Made with ❤️ by:**
-- **Kushagra** - Lead Developer
+**Made with ❤️ by: Kushagra Sharma**
+
 
 ## 🙏 Acknowledgments
 
